@@ -1,3 +1,7 @@
+
+.pad-on-desk{
+	padding-top: 20px !important
+}
 @media (max-width: 600px){
 	.custom-page-home{
 		padding-bottom: 150px !important;
@@ -12,9 +16,17 @@
 		padding-bottom: 180px !important;
 	}
 	.custom-response-checkbox{
-		position: relative !important;
-    left: 150px !important;
+    position: relative !important;
+    left: -17px !important;
     bottom: 25px !important;
-    top: -25px !important
+    top: 33px !important;
+	}
+
+	br.hide-for-small-only{
+		display: none !important
+	}
+
+	.pad-on-desk{
+		padding-top: 0px !important
 	}
 }

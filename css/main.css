@@ -405,8 +405,11 @@ ul, li{
 
 .notify{
   position: absolute !important;
-  left: 415px !important;
+  left: -15px !important;
   top: 6px;
+  margin-left: 13px !important;
+  width: 20px !important;
+  margin-right: 10px !important;
 }
 
 .margin-top{
@@ -1588,7 +1591,7 @@ strong,
     padding-right: 1em;
 */
     padding-top: 112px;
-    padding-bottom: 180px;
+    padding-bottom: 120px;
 }
 .page-about .article{
        max-width: 480px;
