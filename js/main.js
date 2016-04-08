@@ -182,6 +182,26 @@ $(window).on('hashchange', function(e){
  	}
 });
 
+document.getElementById('MERGE0').autocomplete = 'off';
+
+
+function handleNotifyForm(){
+	var datastring = $("#mail-subscription").serialize();
+  $.ajax({
+      type: "POST",
+      url: "http://groupplays.us13.list-manage.com/subscribe/post",
+      data: datastring,
+      success: function(data) {
+      	$('#mail-subscription').find("input[type=email], input[type=radio], input[type=checkbox], textarea").val("");
+        $( "#MERGE1-0" ).prop( "checked", false );
+        $( "#MERGE1-1" ).prop( "checked", false );
+        $( "#MERGE1-2" ).prop( "checked", false );
+        $( "#group_1" ).prop( "checked", false );
+        swal("Thank you!", "We'll let you know when we are live!", "success")
+      }
+  });
+}
+
 
 
 // Email validation text, uncomment below to use them
