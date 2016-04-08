@@ -389,6 +389,36 @@ ul, li{
      0 0 4px 1px rgba(0,0,0,0.1);
 }
 
+.no-border{
+	border: none !important;
+}
+
+.custom-checkbox{
+	position: relative;
+	top: 4px;
+  margin-left: 10px !important;
+}
+
+.no-margin{
+	margin: 0px !important;
+}
+
+.notify{
+  position: absolute !important;
+  left: 415px !important;
+  top: 6px;
+}
+
+.margin-top{
+	margin-top: 20px !important;
+}
+
+.in-label .input {
+  font-family: 'Opensans';
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
 
 
 
@@ -1558,7 +1588,7 @@ strong,
     padding-right: 1em;
 */
     padding-top: 112px;
-    padding-bottom: 112px;
+    padding-bottom: 180px;
 }
 .page-about .article{
        max-width: 480px;

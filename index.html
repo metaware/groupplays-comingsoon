@@ -39,6 +39,7 @@ http://themeforest.net/licenses
 	<link rel="stylesheet" href="./css/main.css">
 	<link rel="stylesheet" href="./css/main_responsive.css">
 	<link rel="stylesheet" href="./css/style-color1.css">
+	<link rel="stylesheet" href="./css/custom.css">
 
 	<script src="./js/vendor/modernizr-2.7.1.min.js"></script>
 </head>
@@ -89,18 +90,13 @@ http://themeforest.net/licenses
 					</a>
 					<span class="title">Watch Video</span>
 				</li>
-				<!-- <li data-menuanchor="register">
+				<li data-menuanchor="register">
 					<a href="#register"><i class="icon ion ion-compose"></i>
 					</a>
 					<span class="title">Stay in touch</span>
-				</li> -->
-				<li data-menuanchor="about-us">
-					<a href="#about-us"><i class="icon ion ion-android-information"></i>
-					</a>
-					<span class="title">About Us</span>
 				</li>
-				<li data-menuanchor="contact">
-					<a href="#contact"><i class="icon ion ion-email"></i>
+				<li data-menuanchor="about-us">
+					<a href="#about-us"><i class="icon ion ion-email"></i>
 					</a>
 					<span class="title">Contact</span>
 				</li>
@@ -192,7 +188,7 @@ http://themeforest.net/licenses
 				<!-- Content -->
 				<section class="content">
 					
-					<header class="header">
+					<header class="header custom-page-home">
 						<div>
 							<!-- <h2 style="text-align: center"><strong>GroupPlays</strong></h2> -->
 							<h2 class="text-center">
@@ -223,7 +219,7 @@ http://themeforest.net/licenses
 
 			<!-- Begin of register page -->
 			<div class="section page-video page page-cent"  id="s-watch">
-				<section class="content">
+				<section class="content custom-page-video">
 					<header class="p-title">
 						<h3>Watch Video <i class="ion ion-compose"></i></h3> 
 					</header>
@@ -251,8 +247,8 @@ http://themeforest.net/licenses
 				<!-- <div class="section page-register page page-cent"  id="s-register">
 					<section class="content">
 						<header class="p-title">
-							<h3>Register <i class="ion ion-compose"></i></h3> 
-							<h4 class="subhead text-left">Register to get our latest news</h4>
+							<h3>Subscribe <i class="ion ion-compose"></i></h3> 
+							<h4 class="subhead text-left">Subscribe to get our latest news</h4>
 						</header>
 						<div>
 							<form id="mail-subscription" class="form magic send_email_form" method="get" action="ajaxserver/serverfile.php">
@@ -284,17 +280,65 @@ http://themeforest.net/licenses
 
 					<!-- Begin of about us page -->
 					<div class="section page-about page page-cent" id="s-about-us">
-						<section class="content">
+						<section class="content custom-page-notify">
 							<header class="p-title">
-								<h3>About Us<i class="ion ion-android-information">
+								<h3>Notify Me When You're Live<i class="ion ion-android-information">
 								</i>
 							</h3>
-							<h4 class="subhead text-left">The Best Way To Manage Your Lotto Pool!</h4>
 						</header>
-						<article class="text">
-							<p>Have more fun, invite more people and take the work out of lottery pools with Groupplay! Have more fun, invite more people and take the work out of lottery pools with Groupplay! Have more fun, invite more people and take the work out of lottery pools with Groupplay! Have more fun, invite more people and take the work out of lottery pools with Groupplay! Have more fun, invite more people and take the work out of lottery pools with Groupplay!</p>
-						</article>
-					</section>
+							<div>
+								<form id="mail-subscription" class="form magic send_email_form" method="get" action="ajaxserver/serverfile.php">
+									<p class="invite">Please, write your email below to stay in touch with us :</p>
+									<div class="fields clearfix no-margin">
+										<div class="input">
+											<label for="reg-email">Email </label>
+											<input id="reg-email" class="email_f"  name="email" type="email" required placeholder="your@email.address" data-validation-type="email">
+										</div>
+										<div class="buttons">
+											<button id="submit-email" class="button email_b" name="submit_email">Notify Me</button>
+										</div>
+									</div>
+
+									<br>
+
+									<div class="row">
+
+										<label for="mes-name">I Play </label><br>
+										<div class="columns large-4 in-label">
+											<div class="input">
+												Regularly <input class="custom-checkbox" id="mes-name" name="play-choices" type="checkbox"> 
+											</div>
+										</div>
+										<div class="columns large-4 in-label">
+											<div class="input">
+												Peak Prizes &nbsp;<input class="custom-checkbox" id="mes-name" name="play-choices" type="checkbox"> 
+											</div>
+										</div>
+										<div class="columns large-4 in-label">
+											<div class="input">
+												Sometimes <input class="custom-checkbox" id="mes-name" name="play-choices" type="checkbox"> 
+											</div>
+										</div>
+
+									</div>
+
+									<br>
+
+									<div class="row">
+										<div class="columns large-12">
+											<div class="input">
+												<label style="font-size: 12px;">I allow you to send me notifications &amp; promotional emails</label>
+												<input class="notify custom-response-checkbox" id="mes-name" name="play-choices" type="checkbox"> 
+											</div>
+										</div>
+
+									</div>
+
+										<p class="email-ok invisible"><strong>Thank you</strong> for your subscription. We will inform you.</p>
+									</form>
+								</div>
+							</section>
+					</div>
 					<footer class="p-footer p-scrolldown">
 						<a href="#contact">
 							<div class="arrow-d">
@@ -311,15 +355,15 @@ http://themeforest.net/licenses
 				<div class="section page-contact page page-cent  bg-color" data-bgcolor="rgba(95, 25, 208, 0.88)s" id="s-contact">
 					<!-- Begin of contact information -->
 					<div class="slide" id="s-information" data-anchor="information">
-						<section class="content">
+						<section class="content custom-page-contact">
 							<header class="p-title">
 								<h3>Contact<i class="ion ion-location">
 								</i>
 							</h3>
 							<ul class="buttons">
-								<li class="show-for-medium-up">
+								<!-- <li class="show-for-medium-up">
 									<a title="About" href="#about-us" ><i class="ion ion-android-information"></i></a>
-								</li>
+								</li> -->
 								<!--<li>
 									<a title="Contact" href="#contact/information"><i class="ion ion-location"></i></a>
 								</li>-->
