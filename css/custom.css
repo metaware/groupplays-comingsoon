@@ -1,0 +1,20 @@
+@media (max-width: 600px){
+	.custom-page-home{
+		padding-bottom: 150px !important;
+	}
+	.custom-page-video{
+		padding-bottom: 200px !important;
+	}
+	.custom-page-notify{
+		padding-bottom: 50px !important;
+	}
+	.custom-page-contact{
+		padding-bottom: 180px !important;
+	}
+	.custom-response-checkbox{
+		position: relative !important;
+    left: 150px !important;
+    bottom: 25px !important;
+    top: -25px !important
+	}
+}
