@@ -197,7 +197,7 @@ function handleNotifyForm(){
         $( "#MERGE1-1" ).prop( "checked", false );
         $( "#MERGE1-2" ).prop( "checked", false );
         $( "#group_1" ).prop( "checked", false );
-        alert("Thank you. We'll let you know when we are live!");
+        swal("Thank you!", "We'll let you know when we are live!", "success")
       }
   });
 }
